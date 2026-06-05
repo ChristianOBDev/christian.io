@@ -132,13 +132,31 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Digipin',
+    title: 'GeoServer MCP',
     description:
-      'Search for the DIGIPIN for your location. This app demonstrates how to use the Digital Postal Index Number (DIGIPIN) by the Department of Posts in India, aiming to simplify geo-coded addressing for public and private services.',
-    tech: ['Openlayers', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/ronitjadhav/digipin-openlayers',
-    live: 'https://digipin.maplabs.tech',
-    image: 'digipin.jpeg',
+      'A MCP server that enables LLM agents to manage and administer GeoServer instances using natural language.',
+    tech: ['Python', 'GeoServer', 'MCP', 'FastMCP', 'REST API', 'Docker'],
+    github: 'https://github.com/ronitjadhav/geoservercloud-mcp',
+    live: 'https://pypi.org/project/geoservercloud-mcp/',
+    image: 'geoservercloud-mcp.webp',
+  },
+  {
+    title: 'Geonetwork-UI',
+    description:
+      'A modern frontend suite for GeoNetwork catalogs. I contributed to the development and enhancement of the Datahub, Metadata Editor, and Map Viewer components.',
+    tech: ['Angular', 'TypeScript', 'Tailwind CSS', 'Jest', 'Cypress'],
+    github: 'https://github.com/geonetwork/geonetwork-ui',
+    live: 'https://geonetwork-ui.labs.camptocamp.com/datahub',
+    image: 'geonetwork-ui.webp',
+  },
+  {
+    title: 'ThinkHazard (World Bank)',
+    description:
+      'An open-source web tool developed for the World Bank and GFDRR. It enables project planners to assess natural hazard risks (like floods, earthquakes, and landslides) for any location and receive mitigation recommendations.',
+    tech: ['Python', 'Pyramid', 'GeoPandas', 'Docker', 'Kubernetes'],
+    github: 'https://github.com/GFDRR/thinkhazard',
+    live: 'https://thinkhazard.org',
+    image: 'thinkhazard.webp',
   },
   {
     title: 'QGIS Hub Plugin',
@@ -156,7 +174,16 @@ export const projects: Project[] = [
     tech: ['Openlayers', 'TypeScript'],
     github: 'https://github.com/openlayers/bench',
     live: 'https://openlayers.org/bench/',
-    image: 'olBench.png',
+    image: 'olBench.webp',
+  },
+  {
+    title: 'Digipin',
+    description:
+      'Search for the DIGIPIN for your location. This app demonstrates how to use the Digital Postal Index Number (DIGIPIN) by the Department of Posts in India, aiming to simplify geo-coded addressing for public and private services.',
+    tech: ['Openlayers', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/ronitjadhav/digipin-openlayers',
+    live: 'https://digipin.maplabs.tech',
+    image: 'digipin.jpeg',
   },
 ];
 
