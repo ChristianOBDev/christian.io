@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://ronitjadhav.github.io/ronit.io/sitemap.xml',
+    sitemap: 'https://christianobdev.github.io/christian.io/sitemap.xml',
   };
 }

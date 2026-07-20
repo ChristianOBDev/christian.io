@@ -19,6 +19,13 @@ const ProjectsShowcase = dynamic(() => import('@/sections/projects'), {
   ssr: false, // Projects don't need SSR for better performance
 });
 
+const AboutShowcase = dynamic(() => import('@/sections/about'), {
+  loading: () => (
+    <div className="h-screen flex items-center justify-center">Loading About Section...</div>
+  ),
+  ssr: false, // Projects don't need SSR for better performance
+});
+
 // Lazy load ToastContainer
 const LazyToastContainer = dynamic(
   () => import('react-toastify').then((mod) => ({ default: mod.ToastContainer })),
@@ -45,6 +52,7 @@ export default function Home() {
     { id: 'home', component: Header, priority: true },
     { id: 'journey', component: MapComponent, priority: false },
     { id: 'projects', component: ProjectsShowcase, priority: false },
+    // { id: 'about', component: AboutShowcase, priority: false },
   ];
 
   useEffect(() => {
