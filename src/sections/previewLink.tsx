@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ronitImage from '@/media/ronit.png';
+import christianImage from '@/media/christian.webp';
 import Image from 'next/image';
 import { siteConfig, siteUrls } from '@/data/site-config';
 
@@ -15,7 +15,7 @@ async function LinkPreview() {
     >
       <div className="object-cover h-[150px] sm:h-full w-full sm:w-auto">
         <Image
-          src={ronitImage}
+          src={christianImage}
           alt={siteConfig.name}
           className="object-cover h-full w-full sm:w-[340px] m-0"
         />

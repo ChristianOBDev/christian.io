@@ -4,26 +4,11 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import Marquee from 'react-fast-marquee';
 import { motion } from 'framer-motion';
-import ronitImage from '@/media/ronit.png';
-import {
-  SiAngular,
-  SiApacheairflow,
-  SiArcgis,
-  SiArgo,
-  SiDocker,
-  SiGit,
-  SiJavascript,
-  SiKubernetes,
-  SiLeaflet,
-  SiOpenlayers,
-  SiOsgeo,
-  SiPython,
-  SiQgis,
-  SiTypescript,
-} from 'react-icons/si';
+import christianImage from '@/media/christian.webp';
+import { SiDocker, SiGit, SiJavascript, SiNodedotjs, SiPython, SiUnity } from 'react-icons/si';
+import { FaVrCardboard } from 'react-icons/fa';
 import Image from 'next/image';
 import { DialogComponent } from '@/components/getInTouchDialog';
-import ChatbotToggle from '@/components/ChatbotToggle';
 import React, { memo } from 'react';
 import { cn } from '@/lib/utils';
 import { siteConfig, siteUrls, skills as siteSkills } from '@/data/site-config';
@@ -31,22 +16,15 @@ import { IconType } from 'react-icons';
 
 // Map icon names from config to actual icon components
 const iconMap: Record<string, IconType> = {
-  SiArcgis,
-  SiQgis,
-  SiOpenlayers,
-  SiLeaflet,
   SiPython,
   SiJavascript,
-  SiTypescript,
-  SiAngular,
   SiPostgresql: BiLogoPostgresql,
   BiLogoPostgresql,
   SiGit,
   SiDocker,
-  SiKubernetes,
-  SiArgo,
-  SiApacheairflow,
-  SiOsgeo,
+  SiUnity,
+  SiNodedotjs,
+  FaVrCardboard,
 };
 
 // Memoize skills array to prevent re-creation on every render
@@ -212,16 +190,6 @@ const HeroSection = memo(function HeroSection() {
                 buttonClassName="h-10 text-base font-heading md:h-12 md:text-lg lg:h-14 lg:text-xl"
               />
             </motion.div>
-
-            {/* Chatbot button - positioned below Get in Touch on mobile, right corner on desktop */}
-            <motion.div
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              className="relative z-10 mt-4 lg:hidden"
-            >
-              <ChatbotToggle />
-            </motion.div>
           </div>
         </div>
 
@@ -230,7 +198,7 @@ const HeroSection = memo(function HeroSection() {
           variants={itemVariants}
         >
           <Image
-            src={ronitImage}
+            src={christianImage}
             alt={siteConfig.name}
             priority // This is above the fold, so load it immediately
             width={400}
@@ -267,16 +235,6 @@ const HeroSection = memo(function HeroSection() {
             </motion.div>
           ))}
         </Marquee>
-      </motion.div>
-
-      {/* Chatbot positioned above the marquee in bottom-right corner on desktop */}
-      <motion.div
-        variants={buttonVariants}
-        initial="hidden"
-        animate="visible"
-        className="hidden lg:block absolute bottom-20 right-4 z-10 xl:bottom-24"
-      >
-        <ChatbotToggle />
       </motion.div>
     </header>
   );

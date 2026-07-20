@@ -1,29 +1,31 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-import digipinImage from '../media/digipin.jpeg';
-import qgisHubImage from '../media/QGIS-Banner.jpg';
-import olBenchImage from '../media/olBench.webp';
-import geonetworkUiImage from '../media/geonetwork-ui.webp';
-import thinkhazardImage from '../media/thinkhazard.webp';
-import geoserverCloudMcpImage from '../media/geoservercloud-mcp.webp';
+import iahImage from '../media/iah.webp';
+import weatherDartsImage from '../media/weather-darts-logo.webp';
+import dtpImage from '../media/dtp.webp';
+import moonhubImage from '../media/moonhub.webp';
+import cyberEscapeImage from '../media/cyberescape.webp';
+import phantasmImage from '../media/phantasmvv.webp';
+import fingerSpellerImage from '../media/aslfingerspeller.webp';
 import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
 import { projects as projectsConfig } from '@/data/site-config';
 
 // Map image filenames from config to actual imported images
 const imageMap: Record<string, StaticImageData> = {
-  'digipin.jpeg': digipinImage,
-  'QGIS-Banner.jpg': qgisHubImage,
-  'olBench.webp': olBenchImage,
-  'geonetwork-ui.webp': geonetworkUiImage,
-  'thinkhazard.webp': thinkhazardImage,
-  'geoservercloud-mcp.webp': geoserverCloudMcpImage,
+  'iah.webp': iahImage,
+  'weather-darts-logo.webp': weatherDartsImage,
+  'dtp.png': dtpImage,
+  'moonhub.png': moonhubImage,
+  'cyberescape.webp': cyberEscapeImage,
+  'phantasmvv.png': phantasmImage,
+  'aslfingerspeller.png': fingerSpellerImage,
 };
 
 const ProjectsShowcase = () => {
   const projects = projectsConfig.map((p) => ({
     ...p,
-    image: imageMap[p.image] || digipinImage,
+    image: imageMap[p.image] || weatherDartsImage,
   }));
 
   return (
@@ -92,28 +94,32 @@ const ProjectsShowcase = () => {
               </div>
 
               <div className="flex flex-wrap gap-2 sm:gap-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-400 text-black font-bold text-sm sm:text-base transform transition-transform hover:-translate-y-1 hover:shadow-lg dark:text-black
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-400 text-black font-bold text-sm sm:text-base transform transition-transform hover:-translate-y-1 hover:shadow-lg dark:text-black
                     border-2 border-black dark:border-darkBorder
                     shadow-[4px_4px_0px_0px_#000000] dark:shadow-[4px_4px_0px_0px_#555555]"
-                >
-                  <Github size={18} />
-                  Code
-                </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-green-400 text-black font-bold text-sm sm:text-base transform transition-transform hover:-translate-y-1 hover:shadow-lg dark:text-black
+                  >
+                    <Github size={18} />
+                    Code
+                  </a>
+                )}
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-green-400 text-black font-bold text-sm sm:text-base transform transition-transform hover:-translate-y-1 hover:shadow-lg dark:text-black
                     border-2 border-black dark:border-darkBorder
                     shadow-[4px_4px_0px_0px_#000000] dark:shadow-[4px_4px_0px_0px_#555555]"
-                >
-                  <ExternalLink size={18} />
-                  {project.live.includes('pypi.org') ? 'PyPI' : 'Live Demo'}
-                </a>
+                  >
+                    <ExternalLink size={18} />
+                    {project.live.includes('pypi.org') ? 'PyPI' : 'Website'}
+                  </a>
+                )}
               </div>
             </div>
           ))}
