@@ -15,11 +15,11 @@ import { projects as projectsConfig } from '@/data/site-config';
 const imageMap: Record<string, StaticImageData> = {
   'iah.webp': iahImage,
   'weather-darts-logo.webp': weatherDartsImage,
-  'dtp.png': dtpImage,
-  'moonhub.png': moonhubImage,
+  'dtp.webp': dtpImage,
+  'moonhub.webp': moonhubImage,
   'cyberescape.webp': cyberEscapeImage,
-  'phantasmvv.png': phantasmImage,
-  'aslfingerspeller.png': fingerSpellerImage,
+  'phantasmvv.webp': phantasmImage,
+  'aslfingerspeller.webp': fingerSpellerImage,
 };
 
 const ProjectsShowcase = () => {
