@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { ThemeSwitcher } from './theme-switcher';
 import { DialogComponent } from './getInTouchDialog';
 import Image from 'next/image';
-import ronitLogo from '@/media/ronitLogo.png';
+import christianLogo from '@/media/logoBold.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { navLinks } from '@/data/site-config';
@@ -87,7 +87,7 @@ const NavBar = () => {
                 scrolltoHash('home');
               }}
             >
-              <Image src={ronitLogo} alt="Ronit Logo" width={70} height={70} />
+              <Image src={christianLogo} alt="Christian Logo" width={70} height={70} />
             </a>
           </h1>
 
