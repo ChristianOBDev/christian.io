@@ -50,7 +50,7 @@ export default function Home() {
   // Define sections with priority flag
   const sections: Section[] = [
     { id: 'home', component: Header, priority: true },
-    { id: 'journey', component: MapComponent, priority: false },
+    // { id: 'journey', component: MapComponent, priority: false },
     { id: 'projects', component: ProjectsShowcase, priority: false },
     // { id: 'about', component: AboutShowcase, priority: false },
   ];
