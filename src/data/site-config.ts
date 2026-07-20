@@ -15,22 +15,22 @@
 
 export const siteConfig = {
   /** Your full name */
-  name: 'Ronit Jadhav',
+  name: "Christian O'Brien",
 
   /** Your job title / tagline shown in hero and SEO */
-  jobTitle: 'Geospatial Developer & Software Engineer',
+  jobTitle: 'Unity Developer & Game Designer',
 
   /** Short bio displayed in the hero section */
-  bio: "Based in Germany, I'm a Geospatial Developer and a Software Engineer. I love to work with maps, data, and code. I'm passionate about open-source, web technologies, and building cool stuff.",
+  bio: 'I am a Unity Developer and Game Designer with a passion for creating immersive experiences. I specialize in developing interactive applications and games that engage users through innovative design, non-standard interfaces, and cutting-edge technology. Currently based in the UK, and open to contract and freelance opportunities worldwide.',
 
   /** Your country / location */
-  location: 'Germany',
+  location: 'United Kingdom',
 
   /** Your email address */
-  email: 'hi@ronit.io',
+  email: 'christianob.dev@gmail.com',
 
   /** Greeting sequence for the hero typing animation ([text, delay, text, delay, ...]) */
-  greetings: ['Hello!', 1000, 'Hola!', 1000, 'Bonjour!', 1000, 'Namaste!', 1000] as (
+  greetings: ['Hola!', 1000, 'Bonjour!', 1000, 'Dia dhuit!', 1000, 'Hi there!', 1000] as (
     | string
     | number
   )[],
@@ -42,19 +42,19 @@ export const siteConfig = {
 
 export const siteUrls = {
   /** Base URL of the deployed site (no trailing slash) */
-  baseUrl: 'https://ronitjadhav.github.io/ronit.io',
+  baseUrl: 'https://christianobdev.github.io/christian.io',
 
   /** Your GitHub profile URL */
-  github: 'https://github.com/ronitjadhav',
+  github: 'https://github.com/christianobdev',
 
   /** Your LinkedIn profile URL */
-  linkedin: 'https://www.linkedin.com/in/ronitjadhav/',
+  linkedin: 'https://www.linkedin.com/in/chrxstian/',
 
-  /** Your Twitter/X handle (with @) — used in SEO meta tags */
-  twitterHandle: '@ronitjadhav',
+  /** Your Instagram handle (with @) — used in SEO meta tags */
+  twitterHandle: '@LunchRunOnStrava',
 
   /** Your blog URL (shown in navbar & footer) */
-  blog: 'https://dev.to/ronitjadhav',
+  // blog: 'https://dev.to/christianobrien',
 };
 
 // ---------------------
@@ -70,7 +70,7 @@ export const navLinks: NavLink[] = [
   { href: '#home', label: 'Home' },
   { href: '#journey', label: 'Journey' },
   { href: '#projects', label: 'Projects' },
-  { href: siteUrls.blog, label: 'Blogs' },
+  // { href: siteUrls.blog, label: 'Blogs' },
 ];
 
 // ---------------------
@@ -92,21 +92,13 @@ export interface Skill {
 }
 
 export const skills: Skill[] = [
-  { text: 'ArcGIS', icon: 'SiArcgis' },
-  { text: 'QGIS', icon: 'SiQgis' },
-  { text: 'Docker', icon: 'SiDocker' },
-  { text: 'OpenLayers', icon: 'SiOpenlayers' },
-  { text: 'Leaflet', icon: 'SiLeaflet' },
-  { text: 'Kubernetes', icon: 'SiKubernetes' },
-  { text: 'Argo CD', icon: 'SiArgo' },
-  { text: 'Apache Airflow', icon: 'SiApacheairflow' },
-  { text: 'GeoServer', icon: 'SiOsgeo' },
-  { text: 'Python', icon: 'SiPython' },
+  { text: 'Unity', icon: 'SiUnity' },
+
   { text: 'JavaScript', icon: 'SiJavascript' },
-  { text: 'TypeScript', icon: 'SiTypescript' },
-  { text: 'Angular', icon: 'SiAngular' },
-  { text: 'PostGIS', icon: 'SiPostgresql' },
+  { text: 'SQL', icon: 'SiPostgresql' },
   { text: 'Version Control', icon: 'SiGit' },
+  { text: 'Node.JS', icon: 'SiNodedotjs' },
+  { text: 'VR', icon: 'FaVrCarboard' },
 ];
 
 // ---------------------
@@ -132,58 +124,67 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'GeoServer MCP',
+    title: 'IAH NeuroGame',
     description:
-      'A MCP server that enables LLM agents to manage and administer GeoServer instances using natural language.',
-    tech: ['Python', 'GeoServer', 'MCP', 'FastMCP', 'REST API', 'Docker'],
-    github: 'https://github.com/ronitjadhav/geoservercloud-mcp',
-    live: 'https://pypi.org/project/geoservercloud-mcp/',
-    image: 'geoservercloud-mcp.webp',
+      'A game which harnesses EEG technology to provide a brain-computer interface. This game allowed players to learn, practice, and play using BCI. Playable in VR, on PC, and on Android tablets, I was responsible for game design, system architecture, game programming, publishing, and carrying out testing protocols.',
+    tech: ['Unity', 'C#', 'VR', 'Android', 'BCI', 'EEG'],
+    github: '',
+    live: '',
+    image: 'iah.webp',
   },
   {
-    title: 'Geonetwork-UI',
+    title: 'WeatherDarts',
     description:
-      'A modern frontend suite for GeoNetwork catalogs. I contributed to the development and enhancement of the Datahub, Metadata Editor, and Map Viewer components.',
-    tech: ['Angular', 'TypeScript', 'Tailwind CSS', 'Jest', 'Cypress'],
-    github: 'https://github.com/geonetwork/geonetwork-ui',
-    live: 'https://geonetwork-ui.labs.camptocamp.com/datahub',
-    image: 'geonetwork-ui.webp',
+      'A free online daily game which tests your geography and climate knowledge. Given a target temperature, guess up to 5 cities, one at a time, whose real-time temperature will add up to the target. Featuring a stylized frontend and robust backend, I built and published this website myself using JavaScript, Tailwind, and SQL.',
+    tech: ['JavaScript', 'Tailwind', 'Express', 'NodeJS', 'SQL', 'HTML', 'CSS'],
+    github: 'https://github.com/christianobdev/weather-darts',
+    live: 'https://weatherdarts.com',
+    image: 'weather-darts-logo.webp',
   },
   {
-    title: 'ThinkHazard (World Bank)',
+    title: 'DistanceTimePace Calculator',
     description:
-      'An open-source web tool developed for the World Bank and GFDRR. It enables project planners to assess natural hazard risks (like floods, earthquakes, and landslides) for any location and receive mitigation recommendations.',
-    tech: ['Python', 'Pyramid', 'GeoPandas', 'Docker', 'Kubernetes'],
-    github: 'https://github.com/GFDRR/thinkhazard',
-    live: 'https://thinkhazard.org',
-    image: 'thinkhazard.webp',
+      'A web-tool used for calculating running or cycling statistics. I was inspired to make this tool as I was disappointed in the usability of many other online pace calculators. This was my first web development project, built using Bootstrap and React',
+    tech: ['React', 'JavaScript', 'Bootstrap', 'HTML', 'CSS'],
+    github: 'https://github.com/christianobdev/pace-calculator-app',
+    live: 'https://pace-calculator-app.vercel.app',
+    image: 'dtp.webp',
   },
   {
-    title: 'QGIS Hub Plugin',
+    title: 'MOONHUB VR Training',
     description:
-      'Developed at Camptocamp with help from Ismail Sunni, this plugin allows QGIS users to easily browse and add resources from the QGIS Hub directly into their projects. It supports grid and list views, search, and filtering by resource type.',
-    tech: ['Python', 'Qt', 'QGIS'],
-    github: 'https://github.com/qgis/QGIS-Hub-Plugin',
-    live: 'https://plugins.qgis.org/plugins/qgis_hub_plugin/',
-    image: 'QGIS-Banner.jpg',
+      "MOONHUB's immersive VR training platform, designed to provide realistic and interactive training experiences. I was the sole Unity Developer on this project, responsible for implementing core functionalities, optimizing performance, and ensuring a seamless user experience across various VR devices.",
+    tech: ['Unity', 'C#', 'VR'],
+    github: '',
+    live: 'https://themoonhub.com/',
+    image: 'moonhub.webp',
+  },
+  // {
+  //   title: 'MOONHUB Cyber Escape',
+  //   description:
+  //     "MOONHUB's first fully immersive 3D VR experience. I spearheaded this initiative, taking responsibility for all processes in the pipeline from game design to development, programming, localization, documentation, and publishing.",
+  //   tech: ['Unity', 'VR', 'C#', 'XR Interaction Toolkit'],
+  //   github: '',
+  //   live: '',
+  //   image: 'cyberescape.webp',
+  // },
+  {
+    title: 'Phantasm Virtual Visualization',
+    description:
+      'Phantasm\s virtual visualization tool for the film and media industry. A multi-platform application offering visualization, storyboarding, and animation toolsets for pre-production. I was responsible for functionality development, user interface, asset management, documentation, and user support. I supported this project through its use on Mission Impossible, Fast and Furious, and other major productions.',
+    tech: ['Unity', 'C#'],
+    github: '',
+    live: 'https://phantasm.studio/vv/',
+    image: 'phantasmvv.webp',
   },
   {
-    title: 'Openlayers Benchmark',
+    title: 'ASL FingerSpeller',
     description:
-      'Developed at Camptocamp as part of my internship, this project helps to benchmark the performance of WebGL and Canvas rendering in Openlayers. It includes a variety of tests and visualizations to compare the rendering speed of different layers.',
-    tech: ['Openlayers', 'TypeScript'],
-    github: 'https://github.com/openlayers/bench',
-    live: 'https://openlayers.org/bench/',
-    image: 'olBench.webp',
-  },
-  {
-    title: 'Digipin',
-    description:
-      'Search for the DIGIPIN for your location. This app demonstrates how to use the Digital Postal Index Number (DIGIPIN) by the Department of Posts in India, aiming to simplify geo-coded addressing for public and private services.',
-    tech: ['Openlayers', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/ronitjadhav/digipin-openlayers',
-    live: 'https://digipin.maplabs.tech',
-    image: 'digipin.jpeg',
+      "My Master's thesis project, a VR application for learning the American Sign Language alphabet. I designed and developed this application to provide an immersive and interactive learning experience, utilizing hand tracking technology to allow users to practice signing in a virtual environment.",
+    tech: ['Unity', 'C#', 'VR', 'Oculus SDK', 'Hand Tracking'],
+    github: 'https://github.com/ChristianOBDev/asl-fingerspeller',
+    live: 'https://sidequestvr.com/app/1317/asl-fingerspeller',
+    image: 'aslfingerspeller.webp',
   },
 ];
 
@@ -201,38 +202,38 @@ export interface AboutCard {
 }
 
 export const aboutCards: AboutCard[] = [
-  {
-    title: 'About Me',
-    description:
-      "I'm currently working as a Geospatial Software Engineer at Camptocamp, where I specialize in geospatial software development.",
-    image: 'Character1.svg',
-    imageAlt: 'Character1',
-    imagePosition: 'right',
-  },
-  {
-    title: 'Geospatial Development',
-    description:
-      'I thrive on continuously learning various geospatial technologies, from GIS software to spatial databases, to shape ideas into functional applications.',
-    image: 'Character2.svg',
-    imageAlt: 'Character2',
-    imagePosition: 'left',
-  },
-  {
-    title: 'Interest in Technology',
-    description:
-      'Technology has fascinated me since I was young, especially the joy of building things. Combining tech with hands-on creation has always felt just right for me.',
-    image: 'Character3.svg',
-    imageAlt: 'Character3',
-    imagePosition: 'right',
-  },
-  {
-    title: 'Other Hobbies',
-    description:
-      'Here are some of my other passions: I like to dance, play chess, love watching F1, and am a Potterhead.',
-    image: 'Character4.svg',
-    imageAlt: 'Character4',
-    imagePosition: 'left',
-  },
+  // {
+  //   title: 'About Me',
+  //   description:
+  //     "I'm currently working as a Geospatial Software Engineer at Camptocamp, where I specialize in geospatial software development.",
+  //   image: 'Character1.svg',
+  //   imageAlt: 'Character1',
+  //   imagePosition: 'right',
+  // },
+  // {
+  //   title: 'Geospatial Development',
+  //   description:
+  //     'I thrive on continuously learning various geospatial technologies, from GIS software to spatial databases, to shape ideas into functional applications.',
+  //   image: 'Character2.svg',
+  //   imageAlt: 'Character2',
+  //   imagePosition: 'left',
+  // },
+  // {
+  //   title: 'Interest in Technology',
+  //   description:
+  //     'Technology has fascinated me since I was young, especially the joy of building things. Combining tech with hands-on creation has always felt just right for me.',
+  //   image: 'Character3.svg',
+  //   imageAlt: 'Character3',
+  //   imagePosition: 'right',
+  // },
+  // {
+  //   title: 'Other Hobbies',
+  //   description:
+  //     'Here are some of my other passions: I like to dance, play chess, love watching F1, and am a Potterhead.',
+  //   image: 'Character4.svg',
+  //   imageAlt: 'Character4',
+  //   imagePosition: 'left',
+  // },
 ];
 
 // ---------------------
@@ -244,73 +245,97 @@ export interface TimelineEntry {
   title: string;
   date: string;
   description: string;
-  /** [longitude, latitude] */
+  /* [longitude, latitude] */
   location: [number, number];
   locationName: string;
   popupTitle: string;
   popupDescription: string;
 }
 
+//location is in [long, lat]
 export const timelineData: TimelineEntry[] = [
   {
     id: 1,
-    title: 'Software Engineer @ Camptocamp',
-    date: 'Oct 2023 - Present',
+    title: 'Research Assistant @ University of Bath',
+    date: 'Jan 2026 - Jun 2026',
     description:
-      'Kicked off my journey into the open-source geospatial realm at Camptocamp, working with QGIS, Geonetwork-UI, developing custom GIS dashboards, and contributing to QGIS plugins. Diving into Docker, web GIS, and everything open-source!',
-    location: [13.427683548268714, 52.499819181584776],
-    locationName: 'Berlin, Germany (Hybrid)',
-    popupTitle: 'Camptocamp',
-    popupDescription:
-      'Became part of the open-source geospatial world, building geospatial solutions and exploring the power of QGIS.',
+      'I contributed to the research undertaken by the Institute for the Augmented Human, focusing on the development of a brain-computer interface (BCI) game. This project aimed to explore the potential of BCI technology in gaming and interactive experiences.',
+    location: [-2.359017, 51.381065],
+    locationName: 'Bath, UK',
+    popupTitle: 'University of Bath',
+    popupDescription: "Spearheading the development of the IAH's latest BCI game.",
   },
   {
     id: 2,
-    title: 'Software Engineering for Industrial Applications @ Hochschule Hof',
-    date: '2022 - 2024',
+    title: 'Freelance Developer',
+    date: '2024 - 2025',
     description:
-      'Diving deep into advanced programming, software engineering, and IoT, while focusing on Industry 4.0. Gaining expertise in applied cloud computing, non-relational databases, and spatial technologies to bridge software and the real world.',
-    location: [11.941048555260455, 50.325469419408954],
-    locationName: 'Hof, Germany',
-    popupTitle: 'Hochschule Hof',
+      'Taking some time to work on personal projects and freelance work, I focused on learning new skills in web technologies, and building a portfolio of projects to showcase my abilities.',
+    location: [-2.991573, 53.408371],
+    locationName: 'Liverpool, UK',
+    popupTitle: 'WeatherDarts',
     popupDescription:
-      'Expanding my skillset in software engineering, focusing on Industry 4.0, cloud computing, and real-world applications.',
+      'Learning new skills and building a portfolio of projects to showcase my abilities.',
   },
   {
     id: 3,
-    title: 'GIS Developer @ Gistec',
-    date: '2019 - 2022',
+    title: 'Unity Developer @ MOONHUB',
+    date: '2023 - 2024',
     description:
-      'Joined Gistec to create custom geoprocessing tools, work with ArcGIS Enterprise, and develop web mapping apps with Esri tech. Basically, a geospatial problem-solver.',
-    location: [78.39265742273773, 17.489373568497363],
-    locationName: 'Hyderabad, India',
-    popupTitle: 'Gistec',
+      "As sole Unity Developer at MOONHUB, I collaborated with a cross-functional team to bring MOONHUB's immersive VR training platform to life.",
+    location: [-0.127758, 51.507351],
+    locationName: 'London, UK',
+    popupTitle: 'MOONHUB',
     popupDescription:
-      'Built mapping tools and apps while mastering Python (ArcPy), ArcGIS Server, and the Esri stack.',
+      "Collaborating with a cross-functional team to bring MOONHUB's immersive VR training platform to life.",
   },
   {
     id: 4,
-    title: 'Student Intern @ University of Cologne',
-    date: '2019 - 2019',
+    title: 'Unity Developer @ Phantasm Studio',
+    date: '2020 - 2022',
     description:
-      'Interned at the University of Cologne, applying GIS and spatial analysis to hydrological modeling with ArcSWAT for the Mula-Mutha river. Automated tasks using Python and supported geospatial research for water resources.',
-    location: [6.936245553273681, 50.92747527039799],
-    locationName: 'Cologne, Germany',
-    popupTitle: 'University of Cologne',
+      ' virtual visualization tools for the film and media industry, contributing to projects used in major productions.',
+    location: [-0.41694253485911503, 51.690697675725715],
+    locationName: 'London, UK',
+    popupTitle: 'Phantasm Studio',
     popupDescription:
-      "Leveraged GIS and spatial data to contribute to water flux modeling and the SWAT tool's application in India.",
+      'Developing virtual visualization tools for the film and media industry, contributing to projects used in major productions.',
   },
   {
     id: 5,
-    title: 'M.Sc. in Geoinformatics: The Spatial Awakening',
-    date: '2017 - 2019',
+    title: 'Quality Assurance Tester @ Activision-Blizzard',
+    date: '2020 - 2020',
     description:
-      'Learned to wield GIS, remote sensing, and code like a spatial wizard. Maps and code—what could go wrong?',
-    location: [73.85215058309475, 18.460275536163216],
-    locationName: 'Pune, India',
-    popupTitle: 'BVIEER',
+      'Contributed to the release of Call of Duty: Black Ops Cold War by testing and debugging the game, ensuring a smooth launch for players worldwide.',
+    location: [-97.74055039537241, 30.273787925465474],
+    locationName: 'Austin, Texas, USA',
+    popupTitle: 'Activision-Blizzard',
     popupDescription:
-      'Where I discovered that geography is more than just knowing where places are.',
+      'Played a key role in the successful launch of Call of Duty: Black Ops Cold War by rigorously testing and debugging the game.',
+  },
+  {
+    id: 6,
+    title: 'M.Sc. Serious Games and Virtual Reality @ The Glasgow School of Art',
+    date: '2019 - 2020',
+    description:
+      "My Master's degree focused on the design and development of serious games and virtual reality applications, equipping me with advanced skills in immersive technologies.",
+    location: [-4.295010519317187, 55.856855238980714],
+    locationName: 'Glasgow, UK',
+    popupTitle: 'Glasgow School of Art',
+    popupDescription:
+      "Learning the design and development of serious games and virtual reality applications, and creating an award winning VR game for my Master's thesis.",
+  },
+  {
+    id: 7,
+    title: 'B.Sc. Visual Effects and Motion Graphics @ Brunel University London',
+    date: '2015 - 2018',
+    description:
+      'I pursued a Bachelor’s degree in Visual Effects and Motion Graphics at Brunel University London, gaining a strong foundation in creative and technical skills for the entertainment industry.',
+    location: [-0.472802946515158, 51.532766237267545],
+    locationName: 'London, UK',
+    popupTitle: 'Brunel University',
+    popupDescription:
+      'Pursuing a Bachelor’s degree in Visual Effects and Motion Graphics, gaining a strong foundation in creative and technical skills for the entertainment industry.',
   },
 ];
 
@@ -320,43 +345,48 @@ export const timelineData: TimelineEntry[] = [
 
 export const seoConfig = {
   /** Default page title */
-  title: 'Ronit Jadhav - Geospatial Developer & Software Engineer',
+  title: "Christian O'Brien - Unity Developer & Game Designer",
 
   /** Title template for sub-pages (%s is replaced by the page title) */
-  titleTemplate: '%s | Ronit Jadhav',
+  titleTemplate: "%s | Christian O'Brien",
 
   /** Meta description */
   description:
-    "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies. Expert in ArcGIS, QGIS, OpenLayers, Python, and JavaScript.",
+    'I am a Unity Developer and Game Designer with a passion for creating immersive experiences. I specialize in developing interactive applications and games that engage users through innovative design, non-standard interfaces, and cutting-edge technology. Currently based in the UK, and open to contract and freelance opportunities worldwide.',
 
   /** SEO keywords */
   keywords: [
-    'Geospatial Developer',
+    'Unity Developer',
     'Software Engineer',
-    'Germany',
-    'ArcGIS',
-    'QGIS',
-    'OpenLayers',
-    'Leaflet',
+    'Game Designer',
+    'Game Developer',
+    'VR Developer',
+    'Virtual Reality',
+    'Immersive Experiences',
+    'Interactive Applications',
+    'Non-standard Interfaces',
+    'Cutting-edge Technology',
+    'UK',
+    'United Kingdom',
     'Python',
     'JavaScript',
     'TypeScript',
     'React',
     'Next.js',
-    'PostGIS',
-    'GIS',
-    'Web Development',
-    'Data Visualization',
-    'Maps',
-    'Cartography',
-    'Remote Sensing',
+    'C#',
+    'XR',
+    'XR Interaction Toolkit',
+    'XR Development',
+    'Brain-Computer Interface',
+    'Brain Computer Interface',
+    'BCI',
   ],
 
   /** Open Graph image URL (absolute URL) */
-  ogImage: 'https://ronitjadhav.github.io/ronit.io/ronit.png',
+  ogImage: 'https://christianobdev.github.io/christian.io/christian.webp',
 
   /** Site name for Open Graph */
-  siteName: 'Ronit Jadhav Portfolio',
+  siteName: "Christian O'Brien Portfolio",
 
   /** Google Verification code (optional) */
   googleVerification: 'your-google-verification-code',
@@ -368,7 +398,7 @@ export const seoConfig = {
 
 export const footerConfig = {
   /** Left-side copyright text — {year} will be replaced at runtime */
-  copyrightText: '{name} | Built with ❤ & ☕',
+  copyrightText: '{name}',
 
   /** Right-side tech badge text */
   techBadge: '</> with Next.js + Tailwind',
