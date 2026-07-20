@@ -1,4 +1,4 @@
-# ronit.io
+# christian.io
 
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
@@ -8,7 +8,6 @@ Welcome to my personal website!
 
 - [About](#about)
 - [Screenshots](#screenshots)
-- [AI Chatbot](#ai-chatbot)
 - [Getting Started](#getting-started)
 - [Environment Variables](#environment-variables)
 - [Customization](#customization)
@@ -20,54 +19,18 @@ Welcome to my personal website!
 
 ## About
 
-**ronit.io** is my personal website where I share my projects, blog posts, and more. It's built using [Next.js](https://nextjs.org) and styled with [Tailwind CSS](https://tailwindcss.com). The site is designed to be fast, accessible, and easy to maintain.
-
-The website will feature an **AI-powered chatbot** (coming soon) that can answer questions about my professional background and experience, making it easy for visitors to learn more about my work and projects interactively.
+**christian.io** is my personal website where I share my projects, blog posts, and more. It's built using [Next.js](https://nextjs.org) and styled with [Tailwind CSS](https://tailwindcss.com). The site is designed to be fast, accessible, and easy to maintain.
 
 ## Screenshots
 
 <!-- If you have screenshots, add them here -->
 <!-- ![Homepage Screenshot](./screenshots/homepage.png) -->
 
-![Screenshot of the homepage of Ronit.io, showing the main layout and navigation](./screenshots/screenshot_home.png)
+![Screenshot of the homepage of christian.io, showing the main layout and navigation](./screenshots/screenshot_home.png)
 
-![Screenshot of the Journey page of Ronit.io, showcasing the timeline of personal milestones](./screenshots/screenshot_journey.png)
+![Screenshot of the Journey page of christian.io, showcasing the timeline of personal milestones](./screenshots/screenshot_journey.png)
 
-![Screenshot of the Projects page of Ronit.io, displaying a list of projects with descriptions and links](./screenshots/screenshot_projects.png)
-
-## AI Chatbot (Coming Soon) 🚀
-
-The website will feature an **AI-powered FAQ chatbot** that can answer questions about Ronit's professional background, projects, and experience.
-
-> **Note**: The chatbot is currently disabled and shows "Coming Soon" on hover. It will be enabled once the site is deployed to a platform that supports server-side API routes (like Vercel or Netlify) instead of GitHub Pages.
-
-### Planned Features:
-
-- 🤖 **AI-Powered**: Will use Google Gemini API for intelligent responses
-- 🛡️ **Anti-Abuse Protection**: reCAPTCHA verification to prevent spam and misuse
-- 📱 **Responsive Design**: Will work seamlessly on desktop, tablet, and mobile
-- 🎨 **Neobrutalism Theme**: Clean, minimal design matching the site aesthetic
-- ⚡ **Quick Actions**: Pre-built suggestions for common questions
-- 🔒 **Session-Based**: Verify once per session for smooth user experience
-
-### How it will work:
-
-1. Click the "Ask Ronit AI" button (currently shows "Coming Soon")
-2. Complete reCAPTCHA verification (first-time only)
-3. Chat with the AI about Ronit's experience, projects, and professional background
-4. Get instant, contextual responses with suggested follow-up questions
-
-The chatbot will operate in two modes:
-
-- **With Gemini API**: Full AI capabilities with natural language understanding
-- **Without API**: Falls back to curated FAQ responses for basic questions
-
-### Security & Privacy:
-
-- reCAPTCHA verification prevents automated abuse and spam
-- No conversation data will be stored or logged
-- API calls will be rate-limited and monitored
-- All interactions will be session-based (no persistent data)
+![Screenshot of the Projects page of christian.io, displaying a list of projects with descriptions and links](./screenshots/screenshot_projects.png)
 
 ## Getting Started
 
@@ -76,8 +39,8 @@ To run the website locally, follow these steps:
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/ronitjadhav/ronit.io.git
-cd ronit.io
+git clone https://github.com/christianobdev/christian.io.git
+cd christian.io
 ```
 
 2. **Install dependencies:**
@@ -120,7 +83,7 @@ This project requires several environment variables to function properly. Copy `
 cp .env.example .env
 ```
 
-### Google reCAPTCHA v2 (Contact Form & Chatbot verification)
+### Google reCAPTCHA v2 (Contact Form verification)
 
 | Variable                                | Description                                        |
 | --------------------------------------- | -------------------------------------------------- |
@@ -154,31 +117,20 @@ cp .env.example .env
 - Get your access token at: [Mapbox Access Tokens](https://account.mapbox.com/access-tokens/)
 - Create custom map styles at: [Mapbox Studio](https://studio.mapbox.com/) or use Mapbox defaults
 
-### Google Gemini API (AI Chatbot - Coming Soon)
-
-| Variable         | Description                                                     |
-| ---------------- | --------------------------------------------------------------- |
-| `GEMINI_API_KEY` | Google Gemini API key (server-side only, not exposed to client) |
-
-- Get your API key at: [Google AI Studio](https://aistudio.google.com/app/apikey)
-- **Note**: This is a server-side variable — it will NOT be exposed to the browser
-- Chatbot is currently disabled; will be enabled after deployment to Vercel/Netlify
-
 ### Optional (Development)
 
 | Variable  | Description                                                              |
 | --------- | ------------------------------------------------------------------------ |
 | `ANALYZE` | Set to `true` to enable webpack bundle analysis during production builds |
 
-### Setup Instructions:
+### Setup Instructions
 
 1. Copy the example file: `cp .env.example .env`
 2. Fill in your API keys and tokens
 3. Restart the development server (`npm run dev`)
 
-### Troubleshooting:
+### Troubleshooting
 
-- **Chatbot not working**: Currently disabled (Coming Soon) - will be enabled after deployment to Vercel/Netlify
 - **Contact form failing**: Verify `NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY` and EmailJS credentials
 - **Maps not loading**: Ensure `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` is valid
 - **reCAPTCHA issues**: Confirm domain is registered in Google reCAPTCHA admin
@@ -187,7 +139,7 @@ cp .env.example .env
 
 This project is designed to be easily **forked and customized** as your own portfolio. All personal data (name, bio, projects, skills, timeline, SEO, etc.) is centralized in a single configuration file:
 
-```
+```bash
 src/data/site-config.ts
 ```
 
@@ -203,7 +155,6 @@ For a detailed step-by-step guide, see **[CUSTOMIZATION.md](./CUSTOMIZATION.md)*
 
 ## Features
 
-- **🤖 AI Chatbot (Coming Soon):** Interactive FAQ assistant powered by Google Gemini API with anti-abuse protection
 - **📧 Contact Form:** Secure contact form with reCAPTCHA verification and EmailJS integration
 - **🗺️ Interactive Maps:** Custom Mapbox integration with light/dark theme support
 - **📱 Responsive Design:** Optimized for desktop, tablet, and mobile devices
@@ -219,7 +170,6 @@ For a detailed step-by-step guide, see **[CUSTOMIZATION.md](./CUSTOMIZATION.md)*
 - **Next.js 15:** React framework with App Router and Turbopack for fast development
 - **TypeScript:** Strongly typed JavaScript for better development experience
 - **Tailwind CSS:** Utility-first CSS framework for rapid UI development
-- **Google Gemini API:** Advanced AI for intelligent chatbot responses
 - **Mapbox:** Interactive maps with custom styling
 - **EmailJS:** Client-side email sending for contact forms
 - **Google reCAPTCHA:** Bot protection and spam prevention
@@ -231,25 +181,25 @@ For a detailed step-by-step guide, see **[CUSTOMIZATION.md](./CUSTOMIZATION.md)*
 
 This site can be easily deployed to platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
 
-### Environment Variables for Production:
+### Environment Variables for Production
 
 When deploying, make sure to add all environment variables from `.env.example` to your deployment platform:
 
 - Vercel: Project Settings → Environment Variables
 - Netlify: Site Settings → Environment Variables
 
-### Build Commands:
+### Build Commands
 
 ```bash
 npm run build
 npm start
 ```
 
-### Important Notes:
+### Important Notes
 
 - All `NEXT_PUBLIC_*` variables are exposed to the client-side
 - Keep server-side variables (like `GEMINI_API_KEY`) secure and never expose them
-- Test all features (chatbot, contact form, maps) after deployment
+- Test all features (contact form, maps) after deployment
 - Ensure your domain is registered with Google reCAPTCHA for production
 
 ## Contributing
@@ -264,6 +214,6 @@ Contributions are welcome! If you have suggestions, bug reports, or want to add 
 
 ## Contact
 
-You can reach me through the **Get in Touch** button by visiting [ronit.io](https://ronit.io).
+You can reach me through the **Get in Touch** button by visiting [christian.io](https://christian.io).
 
 Thank you for visiting my website!

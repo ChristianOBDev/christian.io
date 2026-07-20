@@ -1,5 +1,5 @@
 {
-  "name": "ronit.io",
+  "name": "christian.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "dev:webpack": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "analyze": "cross-env ANALYZE=true NODE_ENV=production next build",
@@ -26,12 +26,12 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
     "lucide-react": "^0.468.0",
-    "next": "15.3.1",
+    "next": "16.2.10",
     "next-themes": "^0.4.4",
     "ol": "^10.3.1",
     "ol-mapbox-style": "^12.4.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "react-fast-marquee": "^1.6.5",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^5.4.0",
@@ -41,17 +41,20 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@next/bundle-analyzer": "^15.3.3",
+    "@next/bundle-analyzer": "16.2.10",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
     "cross-env": "^7.0.3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.1",
+    "eslint-config-next": "16.2.10",
     "postcss": "^8",
     "prettier": "^3.5.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3"
   }
 }

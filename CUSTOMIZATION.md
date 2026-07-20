@@ -110,6 +110,7 @@ export const projects = [
 1. Add the project image to `src/media/`
 2. Add the project entry to the `projects` array in `site-config.ts`
 3. In `src/sections/projects.tsx`, import your image and add it to the `imageMap` object:
+
    ```ts
    import myProjectImage from '../media/my-project.png';
    const imageMap = {
@@ -193,13 +194,13 @@ The `{name}` placeholder is replaced with `siteConfig.name` at runtime.
 
 ## Images
 
-| Image               | Location                  | Purpose                    |
-| ------------------- | ------------------------- | -------------------------- |
-| Profile photo       | `src/media/ronit.png`     | Hero section, preview card |
-| Logo                | `src/media/ronitLogo.png` | Navbar brand               |
-| Project screenshots | `src/media/*.{jpg,png}`   | Project cards              |
-| Character SVGs      | `src/media/svgs/*.svg`    | About section cards        |
-| Background SVG      | `public/landing-dark.svg` | Page background pattern    |
+| Image               | Location                   | Purpose                    |
+| ------------------- | -------------------------- | -------------------------- |
+| Profile photo       | `src/media/christian.webp` | Hero section, preview card |
+| Logo                | `src/media/logoBold.webp`  | Navbar brand               |
+| Project screenshots | `src/media/*.{jpg,png}`    | Project cards              |
+| Character SVGs      | `src/media/svgs/*.svg`     | About section cards        |
+| Background SVG      | `public/landing-dark.svg`  | Page background pattern    |
 
 Replace these files with your own (keep the same filenames, or update the imports).
 
@@ -222,15 +223,8 @@ cp .env.example .env
 | `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN`       | For journey map  | Mapbox access token    |
 | `NEXT_PUBLIC_MAPBOX_LIGHT_STYLE_URL`    | For journey map  | Mapbox light style URL |
 | `NEXT_PUBLIC_MAPBOX_DARK_STYLE_URL`     | For journey map  | Mapbox dark style URL  |
-| `GEMINI_API_KEY`                        | For chatbot      | Google Gemini API key  |
 
 See the [README](./README.md#environment-variables) for detailed setup instructions for each service.
-
----
-
-## FAQ Data (`src/data/faq-data.json`)
-
-The chatbot uses this file for fallback FAQ responses. Update the questions, answers, personality, and context to match your background.
 
 ---
 

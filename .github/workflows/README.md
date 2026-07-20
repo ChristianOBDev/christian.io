@@ -1,6 +1,6 @@
 # GitHub Workflows
 
-This directory contains GitHub Actions workflows for the ronit.io project.
+This directory contains GitHub Actions workflows for the christian.io project.
 
 ## Workflows
 
