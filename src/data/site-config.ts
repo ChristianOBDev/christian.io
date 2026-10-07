@@ -400,6 +400,9 @@ export const footerConfig = {
   /** Left-side copyright text — {year} will be replaced at runtime */
   copyrightText: '{name}',
 
+  /** Path to the dissertation PDF in the public directory */
+  dissertationHref: 'dissertation.pdf',
+
   /** Right-side tech badge text */
   techBadge: '</> with Next.js + Tailwind',
 };
