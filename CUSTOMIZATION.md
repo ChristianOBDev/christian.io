@@ -184,11 +184,14 @@ This controls all SEO meta tags, Open Graph tags, Twitter cards, and structured 
 ```ts
 export const footerConfig = {
   copyrightText: '{name} | Built with ❤ & ☕',
+  dissertationHref: 'dissertation.pdf',
   techBadge: '</> with Next.js + Tailwind',
 };
 ```
 
-The `{name}` placeholder is replaced with `siteConfig.name` at runtime.
+The `{name}` placeholder is replaced with `siteConfig.name` at runtime. Place
+the dissertation PDF at `public/dissertation.pdf`; the footer link opens it in a
+new tab.
 
 ---
 

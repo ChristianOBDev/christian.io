@@ -37,6 +37,18 @@ function NavLinks() {
           </a>
         </li>
       ))}
+      <li>
+        <a
+          href={footerConfig.dissertationHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-text border-4 border-transparent hover:border-black hover:bg-yellow-300
+                             px-4 py-1 transition-all duration-200 dark:text-darkText dark:hover:text-black"
+        >
+          View Dissertation
+          <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" />
+        </a>
+      </li>
     </ul>
   );
 }
